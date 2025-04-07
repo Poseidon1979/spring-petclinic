@@ -40,10 +40,3 @@ pipeline:
                       type: branch
                       spec:
                         branch: main
-              - step:
-                  type: Plugin
-                  name: Plugin_1
-                  identifier: Plugin_1
-                  spec:
-                    connectorRef: account.harnessImage
-                    image: kameshsampath/drone-java-maven-plugin
