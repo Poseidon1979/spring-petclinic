@@ -41,11 +41,9 @@ pipeline:
                       spec:
                         branch: main
               - step:
-                  type: Run
-                  name: Run_1
-                  identifier: Run_1
+                  type: Plugin
+                  name: Plugin_1
+                  identifier: Plugin_1
                   spec:
                     connectorRef: account.harnessImage
-                    image: openjdk:11-jre-slim
-                    shell: Sh
-                    command: ./mvnw spring-boot:build-image
+                    image: kameshsampath/drone-java-maven-plugin
