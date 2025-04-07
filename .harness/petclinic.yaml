@@ -46,6 +46,6 @@ pipeline:
                   identifier: Run_1
                   spec:
                     connectorRef: account.harnessImage
-                    image: us.gcr.io/playground/quickstart-image
+                    image: openjdk:11-jre-slim
                     shell: Sh
                     command: ./mvnw spring-boot:build-image
